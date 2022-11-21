@@ -2,6 +2,13 @@ import altair as alt
 import streamlit as st
 import pandas as pd
 
+
+def get_crime_types():
+    return ['murdPerPop', 'rapesPerPop', 'robbbPerPop',
+              'assaultPerPop', 'burglPerPop', 'larcPerPop', 
+              'autoTheftPerPop', 'arsonsPerPop', 'ViolentCrimesPerPop',
+              'nonViolPerPop']
+
 @st.cache
 def return_crime_dataset():
     # get data   
@@ -10,28 +17,49 @@ def return_crime_dataset():
 
 # get data for visualization
 crime_data = return_crime_dataset()
-print(crime_data)
 
-# with st.sidebar:
-#     pass
-    # x_axis = st.selectbox(label = "x_axis", options = crime_data.columns)
+with st.sidebar:
+    y_axis = st.selectbox(label = "Crime_Types", options = get_crime_types())
+    # x_axis = st.selectbox(label = "y_axi", options = crime_data['state'])
+
     
 
 # altair plot
 ch_prime = alt.Chart(crime_data).mark_bar().encode(
-           # x = 'Component_1:Q',
-           # y = 'Component_2:Q',
-           x = "state:Q",
-           y = "assaults:Q",
-        #    color=alt.condition(
-        #         alt.datum.state>100,  # If the year is 1810 this test returns True,
-        #         alt.value('orange'),     # which sets the bar orange.
-        #         alt.value('steelblue')),
-           tooltip = ['Class', 'Label', 'Score']
+           x = 'state',
+           y = y_axis,
 ).properties(
     width=800,
     height=600
 )
 
+ch_scatter = alt.Chart(crime_data).mark_circle(size=60).encode(
+           x = 'state',
+           y = y_axis,
+).properties(
+    width=800,
+    height=600
+).interactive()
 
-st.write(ch_prime)
+
+tab1, tab2, tab3 = st.tabs(["tab1", "tab2", "tab3"])
+
+with tab1:
+   tab11,tab12 = st.tabs(["tab11","tab12"])
+   with tab11:
+    st.header("Bar Chart")
+    st.write(ch_prime)
+   with tab12:
+    st.header("Bar Chart")
+    st.write(ch_prime)
+
+with tab2:
+   st.header("Scatter Chart")
+   st.write(ch_scatter)
+
+with tab3:
+   st.header("Data")
+   st.write(crime_data)
+
+
+
