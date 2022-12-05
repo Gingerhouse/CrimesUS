@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from pycaret.regression import *
 
-
+st.set_page_config(layout="wide")
 st.title("Crime in the United Sates")
 
 tab1, tab2, tab3, tab4 = st.tabs(["Main", "Crime","Predict Crime", "State"])
@@ -29,9 +29,9 @@ with tab1:
    st.markdown("Made by: Prachi Chandanshive, Abel Villanueva Perez, Nikhil Mandge, and Charlie Jubera.")
    st.markdown("Data sourced from: https://www.kaggle.com/datasets/michaelbryantds/crimedata/code.")
 with tab2:
-   
+   col1, col2 = st.columns([1, 3])
    crime_df, crime_corr = load_crime_data()
-   with st.sidebar:
+   with col1:
     census_stats = ['population','householdsize','racepctblack','racePctWhite','racePctAsian','racePctHisp','agePct12t21','agePct12t29','agePct16t24','agePct65up','numbUrban','pctUrban','medIncome','pctWWage','pctWFarmSelf','pctWInvInc','pctWSocSec','pctWPubAsst','pctWRetire','medFamInc','perCapInc','whitePerCap','blackPerCap','indianPerCap','AsianPerCap','OtherPerCap','HispPerCap','NumUnderPov','PctPopUnderPov','PctLess9thGrade','PctNotHSGrad','PctBSorMore','PctUnemployed','PctEmploy','PctEmplManu','PctEmplProfServ','PctOccupManu','PctOccupMgmtProf','MalePctDivorce','MalePctNevMarr','FemalePctDiv','TotalPctDiv','PersPerFam','PctFam2Par','PctKids2Par','PctYoungKids2Par','PctTeen2Par','PctWorkMomYoungKids','PctWorkMom','NumKidsBornNeverMar','PctKidsBornNeverMar','NumImmig','PctImmigRecent','PctImmigRec5','PctImmigRec8','PctImmigRec10','PctRecentImmig','PctRecImmig5','PctRecImmig8','PctRecImmig10','PctSpeakEnglOnly','PctNotSpeakEnglWell','PctLargHouseFam','PctLargHouseOccup','PersPerOccupHous','PersPerOwnOccHous','PersPerRentOccHous','PctPersOwnOccup','PctPersDenseHous','PctHousLess3BR','MedNumBR','HousVacant','PctHousOccup','PctHousOwnOcc','PctVacantBoarded','PctVacMore6Mos','MedYrHousBuilt','PctHousNoPhone','PctWOFullPlumb','OwnOccLowQuart','OwnOccMedVal','OwnOccHiQuart','OwnOccQrange','RentLowQ','RentMedian','RentHighQ','RentQrange','MedRent','MedRentPctHousInc','MedOwnCostPctInc','MedOwnCostPctIncNoMtg','NumInShelters','NumStreet','PctForeignBorn','PctBornSameState','PctSameHouse85','PctSameCity85','PctSameState85']
     crimes = ['murders','murdPerPop','rapes','rapesPerPop','robberies','robbbPerPop','assaults','assaultPerPop','burglaries','burglPerPop','larcenies','larcPerPop','autoTheft','autoTheftPerPop','arsons','arsonsPerPop','ViolentCrimesPerPop','nonViolPerPop']
     
@@ -45,6 +45,14 @@ with tab2:
     '3. ' + filtered_corr.iloc[2] + "\n" + 
     '4. ' + filtered_corr.iloc[3] + "\n" + 
     '5. ' + filtered_corr.iloc[4])
+   crimes_chart = alt.Chart(crime_df).mark_point().encode(
+    x=census_selection,
+    y=crime_type,
+   ).properties(
+      width= 750,
+      height = 500)
+   with col2:
+      st.write(crimes_chart + crimes_chart.transform_regression(census_selection,crime_type).mark_line(color='red'))
 
 with tab3:
    st.header("An owl")
