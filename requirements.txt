@@ -1,7 +1,6 @@
-python==3.9.15
 altair
 numpy
 streamlit
 pandas
-pycaret==3.0.0rc2
+pycaret==1.0.0
 vega_datasets
