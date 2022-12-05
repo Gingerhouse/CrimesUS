@@ -1,4 +1,5 @@
 altair
+numpy
 streamlit
 pandas
 pycaret==2.3.0
