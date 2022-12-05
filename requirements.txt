@@ -1,5 +1,5 @@
 altair
 streamlit
 pandas
-pycaret=1.0.0
+pycaret==1.0.0
 vega_datasets
