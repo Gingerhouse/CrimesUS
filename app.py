@@ -2,6 +2,8 @@ import altair as alt
 import streamlit as st
 import pandas as pd
 from pycaret.regression import *
+from vega_datasets import data
+
 
 st.set_page_config(layout="wide")
 st.title("Crime in the United Sates")
@@ -27,6 +29,109 @@ def v_pred_cache(test_data):
    predictions = predict_model(lr_v_saved, data= test_data)
    return predictions['Label']
 
+@st.cache
+def var_dict(var):
+   Data_dict = {'population': 'population for community',
+                'householdsize': 'mean people per household',
+                'racepctblack': 'percentage of population that is of african american ',
+                'racePctWhite': 'percentage of population that is of caucasian ',
+                'racePctAsian': 'percentage of population that is of asian heritage',
+                'racePctHisp': 'percentage of population that is of hispanic heritage',
+                'agePct12t21': 'percentage of population that is 12-21 in age',
+                'agePct12t29': 'percentage of population that is 12-29 in age',
+                'agePct16t24': 'percentage of population that is 16-24 in age',
+
+                'agePct65up': 'percentage of population that is 65 and over in age',
+                'numbUrban': ' number of people living in areas classified as urban',
+                'pctUrban': 'percentage of people living in areas classified as urban',
+                'medIncome': 'median household income  ',
+                'pctWWage': ' percentage of households with wage or salary income',
+                'pctWFarmSelf': 'percentage of households with farm or self employment income',
+                'pctWInvInc': 'percentage of households with investment / rent income',
+                'pctWSocSec': 'percentage of households with social security income',
+                'pctWPubAsst': ' percentage of households with public assistance income',
+                
+                'pctWRetire': 'percentage of population that is 65 and over in age',
+                'medFamInc': ' number of people living in areas classified as urban',
+                'perCapInc': 'percentage of people living in areas classified as urban',
+                'whitePerCap': 'per capita income for caucasians', 
+                'blackPerCap': 'per capita income for african americans', 
+                'AsianPerCap': 'per capita income for people with asian heritage', 
+                'OtherPerCap': 'per capita income for people with "other" heritage', 
+                'HispPerCap': 'per capita income for people with hispanic heritage',  
+
+                'NumUnderPov': 'number of people under the poverty level', 
+                'PctPopUnderPov': 'percentage of people under the poverty level',
+                'PctLess9thGrade': 'percentage of people 25 and over with less than a 9th grade education', 
+                'PctNotHSGrad': 'percentage of people 25 and over that are not high school graduates' ,
+                'PctBSorMore': 'percentage of people 25 and over with a bachelors degree or higher education' ,
+                'PctUnemployed':' percentage of people 16 and over, in the labor force, and unemployed ',
+                'PctEmploy': 'percentage of people 16 and over who are employed ',
+                'PctEmplManu':' percentage of people 16 and over who are employed in manufacturing ',
+                'PctEmplProfServ':' percentage of people 16 and over who are employed in professional services ',
+                'PctOccupManu': 'percentage of people 16 and over who are employed in manufacturing' ,
+                'PctOccupMgmtProf': 'percentage of people 16 and over who are employed in management or professional occupations ',
+                'MalePctDivorce': 'percentage of males who are divorced ',
+                'MalePctNevMarr':' percentage of males who have never married ',
+                'FemalePctDiv': 'percentage of females who are divorced ',
+                'TotalPctDiv': 'percentage of population who are divorced ',
+                'PersPerFam': 'mean number of people per family ',
+                'PctFam2Par': 'percentage of families (with kids) that are headed by two parents' ,
+                'PctKids2Par': 'percentage of kids in family housing with two parents' ,
+                'PctYoungKids2Par': 'percent of kids 4 and under in two parent households ',
+                'PctTeen2Par':' percent of kids age 12-17 in two parent households ',
+                'PctWorkMomYoungKids': 'percentage of moms of kids 6 and under in labor force ',
+                'PctWorkMom': 'percentage of moms of kids under 18 in labor force ',
+                'NumIlleg': 'number of kids born to never married ',
+                'PctIlleg': 'percentage of kids born to never married ',
+                'NumImmig': 'total number of people known to be foreign born ',
+                'PctImmigRecent': 'percentage of _immigrants_ who immigated within last 3 years',
+                'PctImmigRec5': 'percentage of _immigrants_ who immigated within last 5 years ',
+                'PctImmigRec8': 'percentage of _immigrants_ who immigated within last 8 years ',
+                'PctImmigRec10':' percentage of _immigrants_ who immigated within last 10 years ',
+                'PctRecentImmig': 'percent of _population_ who have immigrated within the last 3 years ',
+                'PctRecImmig5': 'percent of _population_ who have immigrated within the last 5 years ',
+                'PctRecImmig8': 'percent of _population_ who have immigrated within the last 8 years ',
+                'PctRecImmig10': 'percent of _population_ who have immigrated within the last 10 years ',
+                'PctSpeakEnglOnly': 'percent of people who speak only English ',
+                'PctNotSpeakEnglWell': 'percent of people who do not speak English well ',
+                'PctLargHouseFam': 'percent of family households that are large ',
+                'PctLargHouseOccup': 'percent of all occupied households that are large ',
+                'PersPerOccupHous': 'mean persons per household ',
+                'PersPerOwnOccHous': 'mean persons per owner occupied household ',
+                'PersPerRentOccHous': 'mean persons per rental household ',
+                'PctPersOwnOccup': 'percent of people in owner occupied households ',
+                'PctPersDenseHous': 'percent of persons in dense housing ',
+                'PctHousLess3BR': 'percent of housing units with less than 3 bedrooms ',
+                'MedNumBR': 'median number of bedrooms ',
+                'HousVacant': 'number of vacant households ',
+                'PctHousOccup': 'percent of housing occupied ',
+                'PctHousOwnOcc': 'percent of households owner occupied ',
+                'PctVacantBoarded': 'percent of vacant housing that is boarded up ',
+                'PctVacMore6Mos': 'percent of vacant housing that has been vacant more than 6 months',
+                'MedYrHousBuilt': 'median year housing units built ',
+                'PctHousNoPhone': 'percent of occupied housing units without phone ',
+                'PctWOFullPlumb': 'percent of housing without complete plumbing facilities ',
+                'OwnOccLowQuart': 'owner occupied housing - lower quartile value ',
+                'OwnOccMedVal': 'owner occupied housing - median value ',
+                'OwnOccHiQuart': 'owner occupied housing - upper quartile value ',
+                'RentLowQ': 'rental housing - lower quartile rent ',
+                'RentMedian': 'rental housing - median rent ',
+                'RentHighQ': 'rental housing - upper quartile rent ',
+                'MedRent': 'median gross rent ',
+                'MedRentPctHousInc': 'median gross rent as a percentage of household income', 
+                'MedOwnCostPctInc':' median owners cost as a percentage of household income - for owners with a mortgage ',
+                'MedOwnCostPctIncNoMtg': 'median owners cost as a percentage of household income - for owners without a mortgage ',
+                'NumInShelters': 'number of people in homeless shelters ',
+                'NumStreet': 'number of homeless people counted in the street ',
+                'PctForeignBorn': 'percent of people foreign born ',
+                'PctBornSameState': 'percent of people born in the same state as currently living ',
+                'PctSameHouse85': 'percent of people living in the same house as in 1985 ',
+                'PctSameCity85': 'percent of people living in the same city as in 1985 ',
+                'PctSameState85': 'percent of people living in the same state as in 1985 '          
+               }
+   return Data_dict[var]
+
 with tab1:
    st.header("What this tool does:")
    st.markdown("This tool uses crime data collected from a variety of communities  across the US combined with census data to highlight " + 
@@ -49,6 +154,7 @@ with tab2:
     
     crime_type = st.selectbox("What crime type would you like to get more info on?", crimes)
     census_selection = st.selectbox('What census statistic would you like to visualize your selected crimes with?', census_stats)
+    st.write('Description of statistic:  ' + var_dict(census_selection))
     crime_selected_corr = crime_corr[['index', crime_type]].sort_values(by=crime_type, ascending=False)
     filtered_corr = crime_selected_corr[crime_selected_corr['index'].isin(census_stats)]['index']
     st.markdown("### Census Statistics with the Highest Correlation to your Selected Crime Type \n " + 
@@ -112,4 +218,47 @@ with tab3:
    st.markdown("### Non-violent Crimes per Population predicted = %0.2f"%non_v_pred_cache(test_data)[0])
    st.markdown("### Violent Crimes per Population predicted = %0.2f"%v_pred_cache(test_data)[0])
 
+with tab4:
+   st.markdown("## Crime By State")
+   coro_type = st.selectbox("What stat would you like to see per state?", ('robbbPerPop','assaultPerPop','burglPerPop','larcPerPop','autoTheftPerPop','arsonsPerPop','ViolentCrimesPerPop','nonViolPerPop'))
+    
+    
+   state_crime_df = crime_df.groupby('state').agg({'robbbPerPop': 'mean','assaultPerPop': 'mean','burglPerPop': 'mean','larcPerPop': 'mean','autoTheftPerPop': 'mean','arsonsPerPop': 'mean','ViolentCrimesPerPop': 'mean','nonViolPerPop': 'mean'})
+   state_crime_df =state_crime_df.reset_index()
+   state_ids = {'AL': 1, 'AK': 2, 'AR': 5, 'AZ':4, 'CA': 6, 'CO': 8,
+             'CT': 9, 'DC': 11, 'FL': 12, 'GA': 13, 'IA': 19, 'DE':10,
+             'ID': 16, 'IL': 17, 'IN': 18, 'KS': 20, 'KY': 21,
+             'LA': 22, 'MA': 25, 'MD': 24, 'ME': 23, 'MI': 26,
+             'MN': 27, 'MO': 30, 'MS': 28, 'NC': 37, 'ND': 38,
+             'NH': 33, 'NJ': 34, 'NM': 35, 'NV': 32, 'NY': 36,
+             'OH': 39, 'OK': 40, 'OR': 41, 'PA': 42, 'RI': 44,
+             'SC': 45, 'SD': 46, 'TN': 47, 'TX': 48, 'UT': 49,
+             'VA': 51, 'VT': 50, 'WA': 53, 'WI': 55, 'WV': 54, 'WY': 56}
+   state_crime_df['id'] = state_crime_df['state'].map(state_ids)
 
+   state_bar = alt.Chart(crime_df).mark_bar().encode(
+   x='state:N',
+    y=alt.Y(coro_type, aggregate='mean')
+    ).properties(
+        width=1000,
+        height=300
+    )
+
+   states = alt.topo_feature(data.us_10m.url, feature="states")
+   state_cloro = alt.Chart(states).mark_geoshape().encode(
+        color=coro_type+":Q"
+    ).transform_lookup(
+        lookup='id',
+        from_=alt.LookupData(state_crime_df, 'id', [coro_type])
+    ).project(
+        type='albersUsa'
+    ).properties(
+        width=1000,
+        height=500
+    )
+
+   st.write(state_cloro)
+
+   st.write( state_bar )
+
+   
