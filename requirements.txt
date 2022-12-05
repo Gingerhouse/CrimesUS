@@ -1,5 +1,5 @@
 altair
 streamlit
 pandas
-pycaret.regression
+pycaret
 vega_datasets
