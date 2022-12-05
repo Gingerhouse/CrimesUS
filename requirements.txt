@@ -1,0 +1,5 @@
+altair
+streamlit
+pandas
+pycaret.regression
+vega_datasets
