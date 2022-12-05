@@ -1,6 +1,5 @@
 altair
 streamlit
 pandas
-catboost==0.20.2
-pycaret==1.0.0
+pycaret
 vega_datasets
