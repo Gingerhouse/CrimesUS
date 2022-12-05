@@ -8070,3 +8070,1785 @@
                                      verbose=0, warm_start=False)]],
          verbose=False)
 2022-12-05 16:28:17,249:INFO:save_model() successfully completed......................................
+2022-12-05 16:28:33,807:INFO:Initializing load_model()
+2022-12-05 16:28:33,807:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:33,861:INFO:Initializing predict_model()
+2022-12-05 16:28:33,861:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:33,862:INFO:Checking exceptions
+2022-12-05 16:28:33,862:INFO:Preloading libraries
+2022-12-05 16:28:33,960:INFO:Initializing load_model()
+2022-12-05 16:28:33,960:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:34,010:INFO:Initializing predict_model()
+2022-12-05 16:28:34,010:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:34,012:INFO:Checking exceptions
+2022-12-05 16:28:34,012:INFO:Preloading libraries
+2022-12-05 16:28:36,285:INFO:Initializing load_model()
+2022-12-05 16:28:36,285:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:36,339:INFO:Initializing predict_model()
+2022-12-05 16:28:36,340:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:36,341:INFO:Checking exceptions
+2022-12-05 16:28:36,341:INFO:Preloading libraries
+2022-12-05 16:28:36,442:INFO:Initializing load_model()
+2022-12-05 16:28:36,442:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:36,495:INFO:Initializing predict_model()
+2022-12-05 16:28:36,495:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:36,496:INFO:Checking exceptions
+2022-12-05 16:28:36,496:INFO:Preloading libraries
+2022-12-05 16:28:39,193:INFO:Initializing load_model()
+2022-12-05 16:28:39,193:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:39,247:INFO:Initializing predict_model()
+2022-12-05 16:28:39,247:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:39,249:INFO:Checking exceptions
+2022-12-05 16:28:39,249:INFO:Preloading libraries
+2022-12-05 16:28:39,346:INFO:Initializing load_model()
+2022-12-05 16:28:39,346:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:39,400:INFO:Initializing predict_model()
+2022-12-05 16:28:39,401:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:39,402:INFO:Checking exceptions
+2022-12-05 16:28:39,402:INFO:Preloading libraries
+2022-12-05 16:28:40,769:INFO:Initializing load_model()
+2022-12-05 16:28:40,769:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:40,820:INFO:Initializing predict_model()
+2022-12-05 16:28:40,820:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:40,822:INFO:Checking exceptions
+2022-12-05 16:28:40,822:INFO:Preloading libraries
+2022-12-05 16:28:40,920:INFO:Initializing load_model()
+2022-12-05 16:28:40,921:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:40,972:INFO:Initializing predict_model()
+2022-12-05 16:28:40,972:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:40,973:INFO:Checking exceptions
+2022-12-05 16:28:40,973:INFO:Preloading libraries
+2022-12-05 16:28:43,998:INFO:Initializing load_model()
+2022-12-05 16:28:43,999:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:44,049:INFO:Initializing predict_model()
+2022-12-05 16:28:44,049:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:44,050:INFO:Checking exceptions
+2022-12-05 16:28:44,051:INFO:Preloading libraries
+2022-12-05 16:28:44,146:INFO:Initializing load_model()
+2022-12-05 16:28:44,147:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:44,198:INFO:Initializing predict_model()
+2022-12-05 16:28:44,199:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:44,200:INFO:Checking exceptions
+2022-12-05 16:28:44,200:INFO:Preloading libraries
+2022-12-05 16:28:45,845:INFO:Initializing load_model()
+2022-12-05 16:28:45,845:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:45,897:INFO:Initializing predict_model()
+2022-12-05 16:28:45,897:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:45,899:INFO:Checking exceptions
+2022-12-05 16:28:45,899:INFO:Preloading libraries
+2022-12-05 16:28:45,997:INFO:Initializing load_model()
+2022-12-05 16:28:45,997:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:46,050:INFO:Initializing predict_model()
+2022-12-05 16:28:46,050:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:46,052:INFO:Checking exceptions
+2022-12-05 16:28:46,052:INFO:Preloading libraries
+2022-12-05 16:28:47,848:INFO:Initializing load_model()
+2022-12-05 16:28:47,848:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:47,898:INFO:Initializing predict_model()
+2022-12-05 16:28:47,898:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:47,900:INFO:Checking exceptions
+2022-12-05 16:28:47,900:INFO:Preloading libraries
+2022-12-05 16:28:48,003:INFO:Initializing load_model()
+2022-12-05 16:28:48,004:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:48,053:INFO:Initializing predict_model()
+2022-12-05 16:28:48,053:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:48,055:INFO:Checking exceptions
+2022-12-05 16:28:48,055:INFO:Preloading libraries
+2022-12-05 16:28:48,942:INFO:Initializing load_model()
+2022-12-05 16:28:48,942:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:48,993:INFO:Initializing predict_model()
+2022-12-05 16:28:48,993:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:48,994:INFO:Checking exceptions
+2022-12-05 16:28:48,994:INFO:Preloading libraries
+2022-12-05 16:28:49,097:INFO:Initializing load_model()
+2022-12-05 16:28:49,097:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:49,144:INFO:Initializing predict_model()
+2022-12-05 16:28:49,144:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:49,146:INFO:Checking exceptions
+2022-12-05 16:28:49,146:INFO:Preloading libraries
+2022-12-05 16:28:50,408:INFO:Initializing load_model()
+2022-12-05 16:28:50,408:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:50,457:INFO:Initializing predict_model()
+2022-12-05 16:28:50,457:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:50,458:INFO:Checking exceptions
+2022-12-05 16:28:50,459:INFO:Preloading libraries
+2022-12-05 16:28:50,558:INFO:Initializing load_model()
+2022-12-05 16:28:50,558:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:50,605:INFO:Initializing predict_model()
+2022-12-05 16:28:50,605:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:50,606:INFO:Checking exceptions
+2022-12-05 16:28:50,606:INFO:Preloading libraries
+2022-12-05 16:28:52,460:INFO:Initializing load_model()
+2022-12-05 16:28:52,460:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:52,511:INFO:Initializing predict_model()
+2022-12-05 16:28:52,511:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:52,513:INFO:Checking exceptions
+2022-12-05 16:28:52,513:INFO:Preloading libraries
+2022-12-05 16:28:52,613:INFO:Initializing load_model()
+2022-12-05 16:28:52,613:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:52,667:INFO:Initializing predict_model()
+2022-12-05 16:28:52,667:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:52,668:INFO:Checking exceptions
+2022-12-05 16:28:52,669:INFO:Preloading libraries
+2022-12-05 16:28:52,918:INFO:Initializing load_model()
+2022-12-05 16:28:52,918:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:52,966:INFO:Initializing predict_model()
+2022-12-05 16:28:52,966:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:52,967:INFO:Checking exceptions
+2022-12-05 16:28:52,968:INFO:Preloading libraries
+2022-12-05 16:28:53,062:INFO:Initializing load_model()
+2022-12-05 16:28:53,063:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:53,114:INFO:Initializing predict_model()
+2022-12-05 16:28:53,115:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:53,116:INFO:Checking exceptions
+2022-12-05 16:28:53,116:INFO:Preloading libraries
+2022-12-05 16:28:55,486:INFO:Initializing load_model()
+2022-12-05 16:28:55,486:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:55,534:INFO:Initializing predict_model()
+2022-12-05 16:28:55,534:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:55,536:INFO:Checking exceptions
+2022-12-05 16:28:55,536:INFO:Preloading libraries
+2022-12-05 16:28:55,635:INFO:Initializing load_model()
+2022-12-05 16:28:55,635:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:55,684:INFO:Initializing predict_model()
+2022-12-05 16:28:55,684:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:55,685:INFO:Checking exceptions
+2022-12-05 16:28:55,686:INFO:Preloading libraries
+2022-12-05 16:28:59,484:INFO:Initializing load_model()
+2022-12-05 16:28:59,485:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:59,534:INFO:Initializing predict_model()
+2022-12-05 16:28:59,535:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:59,536:INFO:Checking exceptions
+2022-12-05 16:28:59,536:INFO:Preloading libraries
+2022-12-05 16:28:59,637:INFO:Initializing load_model()
+2022-12-05 16:28:59,637:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:59,688:INFO:Initializing predict_model()
+2022-12-05 16:28:59,688:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:59,689:INFO:Checking exceptions
+2022-12-05 16:28:59,689:INFO:Preloading libraries
+2022-12-05 16:28:59,884:INFO:Initializing load_model()
+2022-12-05 16:28:59,884:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:28:59,938:INFO:Initializing predict_model()
+2022-12-05 16:28:59,938:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:28:59,940:INFO:Checking exceptions
+2022-12-05 16:28:59,940:INFO:Preloading libraries
+2022-12-05 16:29:00,042:INFO:Initializing load_model()
+2022-12-05 16:29:00,043:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:00,094:INFO:Initializing predict_model()
+2022-12-05 16:29:00,094:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:00,095:INFO:Checking exceptions
+2022-12-05 16:29:00,095:INFO:Preloading libraries
+2022-12-05 16:29:01,353:INFO:Initializing load_model()
+2022-12-05 16:29:01,354:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:01,402:INFO:Initializing predict_model()
+2022-12-05 16:29:01,403:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:01,404:INFO:Checking exceptions
+2022-12-05 16:29:01,404:INFO:Preloading libraries
+2022-12-05 16:29:01,504:INFO:Initializing load_model()
+2022-12-05 16:29:01,504:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:01,548:INFO:Initializing predict_model()
+2022-12-05 16:29:01,549:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:01,550:INFO:Checking exceptions
+2022-12-05 16:29:01,550:INFO:Preloading libraries
+2022-12-05 16:29:04,734:INFO:Initializing load_model()
+2022-12-05 16:29:04,734:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:04,787:INFO:Initializing predict_model()
+2022-12-05 16:29:04,787:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:04,789:INFO:Checking exceptions
+2022-12-05 16:29:04,789:INFO:Preloading libraries
+2022-12-05 16:29:04,900:INFO:Initializing load_model()
+2022-12-05 16:29:04,900:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:04,947:INFO:Initializing predict_model()
+2022-12-05 16:29:04,947:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:04,949:INFO:Checking exceptions
+2022-12-05 16:29:04,949:INFO:Preloading libraries
+2022-12-05 16:29:07,513:INFO:Initializing load_model()
+2022-12-05 16:29:07,513:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:07,563:INFO:Initializing predict_model()
+2022-12-05 16:29:07,563:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:07,564:INFO:Checking exceptions
+2022-12-05 16:29:07,564:INFO:Preloading libraries
+2022-12-05 16:29:07,666:INFO:Initializing load_model()
+2022-12-05 16:29:07,666:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:07,716:INFO:Initializing predict_model()
+2022-12-05 16:29:07,716:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:07,717:INFO:Checking exceptions
+2022-12-05 16:29:07,717:INFO:Preloading libraries
+2022-12-05 16:29:11,082:INFO:Initializing load_model()
+2022-12-05 16:29:11,083:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:11,131:INFO:Initializing predict_model()
+2022-12-05 16:29:11,132:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:11,133:INFO:Checking exceptions
+2022-12-05 16:29:11,133:INFO:Preloading libraries
+2022-12-05 16:29:11,235:INFO:Initializing load_model()
+2022-12-05 16:29:11,235:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:11,284:INFO:Initializing predict_model()
+2022-12-05 16:29:11,284:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:11,285:INFO:Checking exceptions
+2022-12-05 16:29:11,286:INFO:Preloading libraries
+2022-12-05 16:29:13,481:INFO:Initializing load_model()
+2022-12-05 16:29:13,481:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:13,529:INFO:Initializing predict_model()
+2022-12-05 16:29:13,529:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:13,531:INFO:Checking exceptions
+2022-12-05 16:29:13,531:INFO:Preloading libraries
+2022-12-05 16:29:13,630:INFO:Initializing load_model()
+2022-12-05 16:29:13,630:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:13,682:INFO:Initializing predict_model()
+2022-12-05 16:29:13,682:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:13,683:INFO:Checking exceptions
+2022-12-05 16:29:13,683:INFO:Preloading libraries
+2022-12-05 16:29:16,788:INFO:Initializing load_model()
+2022-12-05 16:29:16,788:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:16,838:INFO:Initializing predict_model()
+2022-12-05 16:29:16,838:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:16,839:INFO:Checking exceptions
+2022-12-05 16:29:16,839:INFO:Preloading libraries
+2022-12-05 16:29:16,938:INFO:Initializing load_model()
+2022-12-05 16:29:16,939:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:16,990:INFO:Initializing predict_model()
+2022-12-05 16:29:16,991:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:16,992:INFO:Checking exceptions
+2022-12-05 16:29:16,992:INFO:Preloading libraries
+2022-12-05 16:29:19,177:INFO:Initializing load_model()
+2022-12-05 16:29:19,177:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:19,226:INFO:Initializing predict_model()
+2022-12-05 16:29:19,227:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:19,228:INFO:Checking exceptions
+2022-12-05 16:29:19,228:INFO:Preloading libraries
+2022-12-05 16:29:19,329:INFO:Initializing load_model()
+2022-12-05 16:29:19,329:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:19,374:INFO:Initializing predict_model()
+2022-12-05 16:29:19,374:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:19,375:INFO:Checking exceptions
+2022-12-05 16:29:19,375:INFO:Preloading libraries
+2022-12-05 16:29:21,899:INFO:Initializing load_model()
+2022-12-05 16:29:21,899:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:21,946:INFO:Initializing predict_model()
+2022-12-05 16:29:21,946:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:21,948:INFO:Checking exceptions
+2022-12-05 16:29:21,948:INFO:Preloading libraries
+2022-12-05 16:29:22,047:INFO:Initializing load_model()
+2022-12-05 16:29:22,047:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:22,094:INFO:Initializing predict_model()
+2022-12-05 16:29:22,094:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:22,095:INFO:Checking exceptions
+2022-12-05 16:29:22,096:INFO:Preloading libraries
+2022-12-05 16:29:23,969:INFO:Initializing load_model()
+2022-12-05 16:29:23,970:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:24,016:INFO:Initializing predict_model()
+2022-12-05 16:29:24,017:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:24,018:INFO:Checking exceptions
+2022-12-05 16:29:24,018:INFO:Preloading libraries
+2022-12-05 16:29:24,117:INFO:Initializing load_model()
+2022-12-05 16:29:24,117:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:24,162:INFO:Initializing predict_model()
+2022-12-05 16:29:24,162:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:24,164:INFO:Checking exceptions
+2022-12-05 16:29:24,164:INFO:Preloading libraries
+2022-12-05 16:29:26,858:INFO:Initializing load_model()
+2022-12-05 16:29:26,859:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:26,904:INFO:Initializing predict_model()
+2022-12-05 16:29:26,904:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:26,906:INFO:Checking exceptions
+2022-12-05 16:29:26,906:INFO:Preloading libraries
+2022-12-05 16:29:27,004:INFO:Initializing load_model()
+2022-12-05 16:29:27,004:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:27,048:INFO:Initializing predict_model()
+2022-12-05 16:29:27,049:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:27,050:INFO:Checking exceptions
+2022-12-05 16:29:27,050:INFO:Preloading libraries
+2022-12-05 16:29:29,216:INFO:Initializing load_model()
+2022-12-05 16:29:29,217:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:29,263:INFO:Initializing predict_model()
+2022-12-05 16:29:29,263:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:29,265:INFO:Checking exceptions
+2022-12-05 16:29:29,265:INFO:Preloading libraries
+2022-12-05 16:29:29,366:INFO:Initializing load_model()
+2022-12-05 16:29:29,366:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:29,409:INFO:Initializing predict_model()
+2022-12-05 16:29:29,410:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:29,411:INFO:Checking exceptions
+2022-12-05 16:29:29,411:INFO:Preloading libraries
+2022-12-05 16:29:32,641:INFO:Initializing load_model()
+2022-12-05 16:29:32,642:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:32,687:INFO:Initializing predict_model()
+2022-12-05 16:29:32,688:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:32,689:INFO:Checking exceptions
+2022-12-05 16:29:32,689:INFO:Preloading libraries
+2022-12-05 16:29:32,788:INFO:Initializing load_model()
+2022-12-05 16:29:32,789:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:32,838:INFO:Initializing predict_model()
+2022-12-05 16:29:32,838:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:32,840:INFO:Checking exceptions
+2022-12-05 16:29:32,840:INFO:Preloading libraries
+2022-12-05 16:29:38,127:INFO:Initializing load_model()
+2022-12-05 16:29:38,127:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:38,179:INFO:Initializing predict_model()
+2022-12-05 16:29:38,179:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:38,181:INFO:Checking exceptions
+2022-12-05 16:29:38,181:INFO:Preloading libraries
+2022-12-05 16:29:38,280:INFO:Initializing load_model()
+2022-12-05 16:29:38,280:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:38,326:INFO:Initializing predict_model()
+2022-12-05 16:29:38,326:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:38,327:INFO:Checking exceptions
+2022-12-05 16:29:38,328:INFO:Preloading libraries
+2022-12-05 16:29:41,639:INFO:Initializing load_model()
+2022-12-05 16:29:41,640:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:41,689:INFO:Initializing predict_model()
+2022-12-05 16:29:41,689:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:41,690:INFO:Checking exceptions
+2022-12-05 16:29:41,690:INFO:Preloading libraries
+2022-12-05 16:29:41,790:INFO:Initializing load_model()
+2022-12-05 16:29:41,790:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:41,835:INFO:Initializing predict_model()
+2022-12-05 16:29:41,836:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:41,837:INFO:Checking exceptions
+2022-12-05 16:29:41,837:INFO:Preloading libraries
+2022-12-05 16:29:43,972:INFO:Initializing load_model()
+2022-12-05 16:29:43,972:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:44,022:INFO:Initializing predict_model()
+2022-12-05 16:29:44,022:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:44,023:INFO:Checking exceptions
+2022-12-05 16:29:44,023:INFO:Preloading libraries
+2022-12-05 16:29:44,122:INFO:Initializing load_model()
+2022-12-05 16:29:44,122:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:29:44,166:INFO:Initializing predict_model()
+2022-12-05 16:29:44,166:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:29:44,168:INFO:Checking exceptions
+2022-12-05 16:29:44,168:INFO:Preloading libraries
+2022-12-05 16:30:18,133:INFO:Initializing load_model()
+2022-12-05 16:30:18,134:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:30:18,183:INFO:Initializing predict_model()
+2022-12-05 16:30:18,183:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:30:18,185:INFO:Checking exceptions
+2022-12-05 16:30:18,185:INFO:Preloading libraries
+2022-12-05 16:30:18,275:INFO:Initializing load_model()
+2022-12-05 16:30:18,275:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:30:18,322:INFO:Initializing predict_model()
+2022-12-05 16:30:18,322:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:30:18,324:INFO:Checking exceptions
+2022-12-05 16:30:18,325:INFO:Preloading libraries
+2022-12-05 16:33:59,908:INFO:Initializing load_model()
+2022-12-05 16:33:59,908:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:33:59,954:INFO:Initializing predict_model()
+2022-12-05 16:33:59,955:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:33:59,956:INFO:Checking exceptions
+2022-12-05 16:33:59,956:INFO:Preloading libraries
+2022-12-05 16:34:00,065:INFO:Initializing load_model()
+2022-12-05 16:34:00,065:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:34:00,109:INFO:Initializing predict_model()
+2022-12-05 16:34:00,109:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:34:00,110:INFO:Checking exceptions
+2022-12-05 16:34:00,111:INFO:Preloading libraries
+2022-12-05 16:49:51,104:INFO:Initializing load_model()
+2022-12-05 16:49:51,104:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:49:51,156:INFO:Initializing predict_model()
+2022-12-05 16:49:51,156:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:49:51,158:INFO:Checking exceptions
+2022-12-05 16:49:51,158:INFO:Preloading libraries
+2022-12-05 16:49:51,249:INFO:Initializing load_model()
+2022-12-05 16:49:51,250:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:49:51,298:INFO:Initializing predict_model()
+2022-12-05 16:49:51,298:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:49:51,300:INFO:Checking exceptions
+2022-12-05 16:49:51,300:INFO:Preloading libraries
+2022-12-05 16:50:47,309:INFO:Initializing load_model()
+2022-12-05 16:50:47,311:INFO:load_model(model_name=non_viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:50:47,364:INFO:Initializing predict_model()
+2022-12-05 16:50:47,364:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['ViolentCrimesPerPop'],
+                                      ml_usecase='regression',
+                                      target='nonViolPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='nonViolPerPop')),
+                ('fix_perfect', Remove_100(target='nonViolPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5811)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:50:47,366:INFO:Checking exceptions
+2022-12-05 16:50:47,366:INFO:Preloading libraries
+2022-12-05 16:50:47,482:INFO:Initializing load_model()
+2022-12-05 16:50:47,483:INFO:load_model(model_name=viol_mdl, platform=None, authentication=None, verbose=True)
+2022-12-05 16:50:47,539:INFO:Initializing predict_model()
+2022-12-05 16:50:47,540:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(display_types=False,
+                                      features_todrop=['nonViolPerPop'],
+                                      ml_usecase='regression',
+                                      target='ViolentCrimesPerPop')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='ViolentCrimesPerPop')),
+                ('fix_perfect', Remove_100(target='ViolentCrimesPerPop')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=5645)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-12-05 16:50:47,541:INFO:Checking exceptions
+2022-12-05 16:50:47,541:INFO:Preloading libraries
