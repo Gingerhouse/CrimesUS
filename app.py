@@ -15,6 +15,18 @@ def load_crime_data():
    crime_corr = crime_corr.reset_index()
    return crime_df, crime_corr
 
+@st.cache
+def non_v_pred_cache(test_data):
+   lr_nv_saved = load_model('non_viol_mdl')
+   predictions = predict_model(lr_nv_saved, data= test_data)
+   return predictions['Label']
+
+@st.cache
+def v_pred_cache(test_data):
+   lr_v_saved = load_model('viol_mdl')
+   predictions = predict_model(lr_v_saved, data= test_data)
+   return predictions['Label']
+
 with tab1:
    st.header("What this tool does:")
    st.markdown("This tool uses crime data collected from a variety of communities  across the US combined with census data to highlight " + 
@@ -55,5 +67,49 @@ with tab2:
       st.write(crimes_chart + crimes_chart.transform_regression(census_selection,crime_type).mark_line(color='red'))
 
 with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+   
+   state = st.selectbox("What state are you in?", crime_df['state'].unique())
+   population = st.slider("What is population of your community?", min_value=10000, max_value=7500000)
+   household_size = st.slider("What is the average household size?", min_value=0, max_value=6)
+
+   a12to21 = st.slider("What percent of your community is aged 12 to 21?", min_value=0, max_value=100)
+   a12t29 = st.slider("What percent of your community is aged 12 to 19?", min_value=0, max_value=100)
+   a16t24 = st.slider("What percent of your community is aged 16 to 24?", min_value=0, max_value=100)
+
+   a65up = st.slider("What percent of your community is aged older than 65?", min_value=0, max_value=100)
+   income = st.slider("What is your communities median income?", min_value=5000, max_value=130000)
+   PubAsst = st.slider("What percent of your community recieve public assistance?", min_value=0, max_value=100)
+
+   HSGrad = st.slider("What percent of your community has not graduated highschool?", min_value=0, max_value=100)
+   Unemployed = st.slider("What percent of your community is unemployed?", min_value=0, max_value=100)
+   Employ = st.slider("What percent of your community is employed ?", min_value=0, max_value=100)
+
+   divorce = st.slider("What percent of your community has been divorced?", min_value=0, max_value=100)
+   personperfam = st.slider("What is the average number of people per family?", min_value=2, max_value=5)
+   vacanthouse = st.slider("How many vacant houses do you have in your area?", min_value=0, max_value=175000)
+
+   people_shelter = st.slider("How many people live in shelters ?", min_value=0, max_value=30000)
+   people_street = st.slider("How many people live on the street?", min_value=0, max_value=10000)
+
+   test_data = pd.DataFrame({'state': state,
+   'population': population,
+   'householdsize': household_size,
+   'agePct12t21': a12to21,
+   'agePct12t29': a12t29,
+   'agePct16t24': a16t24,
+   'agePct65up': a65up,
+   'medIncome': income,
+   'pctWPubAsst': PubAsst,
+   'PctNotHSGrad': HSGrad,
+   'PctUnemployed': Unemployed,
+   'PctEmploy': Employ,
+   'TotalPctDiv': divorce,
+   'PersPerFam': personperfam,
+   'HousVacant': vacanthouse,
+   'NumInShelters': people_shelter,
+   'NumStreet': people_street}, index=[0])
+
+   st.markdown("### Non-violent Crimes per Population predicted = %0.2f"%non_v_pred_cache(test_data)[0])
+   st.markdown("### Violent Crimes per Population predicted = %0.2f"%v_pred_cache(test_data)[0])
+
+
