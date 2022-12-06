@@ -138,8 +138,8 @@ with tab1:
    "potential links in community attributes and types of crime. This tool also displays general crime information for each state represented in the data and D.C. in" + 
    "different visualization methods.")
    st.header("What this tool is for:")
-   st.markdown("Our web app can be used to inform users about the types of crimes in their communities in a digestible manner. For people in power" + 
-   "potential links in community attributes and types of crime.")
+   st.markdown("Our web app can be used to inform users about the types of crimes in their communities in a digestible manner. For people in power this tool can be used as a resouce when making financial planning decsions."
+   )
    st.header("Who can use this tool:")
    st.markdown("The public can use this web app to gain insight about their communities. Non-government organizations can use this tool to see areas that impact crime rates. The government and politicians can use this tool to predict crime rates in their cities based on census statistics.")
    st.header("Additional Info:")
